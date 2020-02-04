@@ -54,7 +54,7 @@ $result = esegui_query($sql);
                                                 <td><?php echo $row['floor']; ?></td>
                                                 <!-- azioni -->
                                                 <td>
-                                                    <a class="btn btn-info" href="details.php">
+                                                    <a class="btn btn-info" href="details.php?id_stanza=<?php echo $row['id']; ?>">
                                                         Visualizza
                                                     </a>
                                                     <a class="btn btn-warning" href="edit.php">
