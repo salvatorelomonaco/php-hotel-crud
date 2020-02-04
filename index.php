@@ -58,10 +58,10 @@ $result = esegui_query($sql);
                                                     <a class="btn btn-info" href="details.php?id_stanza=<?php echo $row['id']; ?>">
                                                         Visualizza
                                                     </a>
-                                                    <a class="btn btn-warning" href="edit.php">
+                                                    <a class="btn btn-warning" href="edit.php?id_stanza=<?php echo $row['id']; ?>">
                                                         Modifica
                                                     </a>
-                                                    <a class="btn btn-danger" href="delete.php">
+                                                    <a class="btn btn-danger" href="delete.php?id_stanza=<?php echo $row['id']; ?>">
                                                         Cancella
                                                     </a>
                                                 </td>

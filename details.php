@@ -21,7 +21,7 @@ $result = esegui_query($sql);
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h1>Dettaglio stanza</h1>
+                        <h1>Dettagli stanza</h1>
                     </div>
                     <div class="col-sm-6 text-right">
                         <a id="torna-in-home" class="btn btn-success" href="index.php">

@@ -20,9 +20,33 @@
                         </a>
                     </div>
                 </div>
+                <?php
+                //COLLEGAMENTO CON LA PAGINA CREATED.PHP
+                    //Se il paramentro 'success' in GET, ovvero nell'url non è vuoto  
+                    if (!empty($_GET['success'])) { ?>
+                        <div class="row">
+                            <div class="col-sm-6 col-sm-offset-3">
+                                <?php
+                                    //se il contenuto di success è true
+                                    if ($_GET['success'] == 'true') { ?>
+                                        <div class="alert alert-success" role="alert">
+                                            Stanza creata con successo
+                                        </div>
+                                    <?php    
+                                    } else { ?>
+                                        <div class="alert alert-danger" role="alert">
+                                            Si è verificato un errore
+                                        </div>
+                                    <?php    
+                                    } ?>
+                            </div>
+                        </div>
+                    <?php
+                    } ?>
+                
                 <div class="row">
                     <div class="col-sm-12">
-                        <form method="post" action="insert.php">
+                        <form method="post" action="created.php">
                         <div class="form-group">
                             <label for="numero_stanza">Numero stanza</label>
                             <input name="numero_stanza" type="text" class="form-control" id="numero_stanza" placeholder="Numero stanza" required>
