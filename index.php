@@ -11,6 +11,7 @@ $result = esegui_query($sql);
 <html lang="en">
     <head>
         <?php include "layout/head.html"; ?>
+        <title>Hotel Boolean</title>
     </head>
     <body>
         <!-- menu -->
